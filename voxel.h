@@ -75,13 +75,13 @@ public:
 	const PoolVector<int> &get_model_side_indices(unsigned int side) const { return _model_side_indices[side]; }
 
 	void set_library(Ref<VoxelLibrary> lib);
+	void set_cube_uv_side(int side, Vector2 tile_pos);
 
 protected:
 	bool _set(const StringName &p_name, const Variant &p_value);
 	bool _get(const StringName &p_name, Variant &r_ret) const;
 	void _get_property_list(List<PropertyInfo> *p_list) const;
 
-	void set_cube_uv_side(int side, Vector2 tile_pos);
 	void update_cube_uv_sides();
 
 	VoxelLibrary *get_library() const;
