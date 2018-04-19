@@ -257,6 +257,7 @@ void Voxel::_bind_methods() {
 
 	ClassDB::bind_method(D_METHOD("set_geometry_type", "type"), &Voxel::set_geometry_type);
 	ClassDB::bind_method(D_METHOD("get_geometry_type"), &Voxel::get_geometry_type);
+	ClassDB::bind_method(D_METHOD("set_cube_uv_side", "side", "tile_pos"), &Voxel::set_cube_uv_side);
 
 	ADD_PROPERTY(PropertyInfo(Variant::STRING, "voxel_name"), "set_name", "get_name");
 	ADD_PROPERTY(PropertyInfo(Variant::COLOR, "color"), "set_color", "get_color");
